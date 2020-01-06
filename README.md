@@ -6,8 +6,7 @@ The goal of these notes is to provide a concise guide towards using python and j
 The main target audience is experimental physicist but the ideas here apply more generally.
 
 [Python](https://www.python.org/) is a great tool free of charge that is widely used in academia and industry and therefore a useful skill for any scientist.
-In experimental science on of the main challenges is to reconcile code redundancy, change in data structure and format and documentation of the results.   
-![](./images/motivation.png)
+In experimental science on of the main challenges is to reconcile code redundancy, change in data structure and format and documentation of the results. ![](./images/motivation.png)
 
 In the following we will use a combination of *python packages* to maintain low level code that can be maintained by and distributed to several collaborators and *jupyter notebooks* for highlevel code, clean representation of the results, and data exploration. 
 
@@ -39,8 +38,7 @@ This provides with python 3.7 and all the main python packages ![](./images/dist
 Any text editor can be used to develop your python code. However, I find it more convinient to use an "integrated development environment" (IDE) such as PyCharm, which provided a range of useful tools. Go to https://www.jetbrains.com/pycharm/ and download the latest version of PyCharm.
 ### Github
 [Version Control](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)  is a system that records changes to a file or set of files over time so that you can recall specific versions later. Generally it means that if you screw things up or lose files, you can easily recover. In addition, you get all this for very little overhead.
-As always there are many solutions out there. Here we will work with github. To create an account go to https://github.com/. To use github seamlessly with PyCharm go to `PyCharm->Preferences->Version Control->Github`. Then click on the '+' sign to login with your github credentials:
-![](./images/PyCharm-Github.png)
+As always there are many solutions out there. Here we will work with github. To create an account go to https://github.com/. To use github seamlessly with PyCharm go to `PyCharm->Preferences->Version Control->Github`. Then click on the '+' sign to login with your github credentials: ![](./images/PyCharm-Github.png)
 
 
 ### Creating and distributing your own package
