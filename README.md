@@ -35,7 +35,9 @@ After reading through this file and going through the notebooks you will know
 Before we get going you need to install a few programs and setup you working environment
 ### Anaconda
 I recommend to install python via Anaconda, which supports Linux, MacOS and Windows. Go to https://www.anaconda.com/distribution/ and install the latest version (Anaconda 2019.10 | Python 3.7 as of this writing).
-This provides with python 3.7 and all the main python packages ![](./images/distro-01-1.png)
+This provides with python 3.7 and all the main python packages
+
+![](./images/distro-01-1.png)
 
 ### notebook extensions
 [Jupyter Notebook Extensions](https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/) contain unofficial extensions that add functionality to the Jupyter notebook.
@@ -57,47 +59,6 @@ Any text editor can be used to develop your python code. However, I find it more
 ### Github
 [Version Control](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)  is a system that records changes to a file or set of files over time so that you can recall specific versions later. Generally it means that if you screw things up or lose files, you can easily recover. In addition, you get all this for very little overhead.
 As always there are many solutions out there. Here we will work with github. To create an account go to https://github.com/. To use github seamlessly with PyCharm go to `PyCharm->Preferences->Version Control->Github`. Then click on the '+' sign to login with your github credentials: ![](./images/PyCharm-Github.png)
-
-
-### Creating and distributing your own package
-Now that we have all the tools installed we can finally begin to create our own python package
-
-Let's start with the [minimnal structure](https://python-packaging.readthedocs.io/en/latest/minimal.html).
- ```
-edaipynb/
-    edaipynb/
-        __init__.py
-    setup.py
-``` 
-Note that the project name appears twice here. The higher level is the project and the lower level contains the actual source code. I also already included `setup.py`, which will be used later to distribute the package. The `__init__.py` file indicates that the folder `edaipynb` is actually a python package and not just a simple folder. At this stage `__init__.py` is just an empty text file.
-
-Let's create this minimal package and link it to github.
-
-- In PyCharm go to `File->New project`, change untitled for the project name (e.g. edaipynb) and select the python interpreter. You can either setup a custom virtual environment or select the standard interpreter. Let's do the latter for now.
-- Add a new python package with the same name as your project (this automatically creates the `__init__.py` in the new subfolder).
-- Add the `setup.py` file for example by copying and modifying the file from https://github.com/JanGieseler/edaipynb/setup.py.
-- add the version number to `edaipynb/__init__.py` by `__version__ = '0.1a0'`
-- add a `readme.md` and add some [markdown](https://www.markdownguide.org/cheat-sheet) text 
-
-Your file structure should now looks something like:
- ```
-edaipynb/
-    edaipynb/
-        __init__.py
-    setup.py
-    readme.md
-``` 
-
-
-Tip: The `edaipynb` follows the above structure, so that you can just use it as a template. 
-
-
-
-Now we push the new project to github. Go to `VCS->Import into Version Control->Share Project on Github`
-
-That's it!! Now you can check in a browser that your new project  actually appears in your github projects.
-
-
 
 
 
@@ -128,6 +89,8 @@ If you are interested in hosting the source code more directly, you can clone fr
 
 
 ### Starting the notebook
+From now on, we will switch to the jupyter notebooks.
+
 There are two options to start up the notebook server.
 
 Option 1 is to exectute `jupyter notebook` in the terminal or anaconda shell. The current location from which the command is executed will be the root location.
