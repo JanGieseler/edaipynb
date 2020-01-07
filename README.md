@@ -6,7 +6,9 @@ The goal of these notes is to provide a concise guide towards using python and j
 The main target audience is experimental physicist but the ideas here apply more generally.
 
 [Python](https://www.python.org/) is a great tool free of charge that is widely used in academia and industry and therefore a useful skill for any scientist.
-In experimental science on of the main challenges is to reconcile code redundancy, change in data structure and format and documentation of the results. ![](./images/motivation.png)
+In experimental science on of the main challenges is to reconcile code redundancy, change in data structure and format and documentation of the results.
+
+![](./images/motivation.png)
 
 In the following we will use a combination of *python packages* to maintain low level code that can be maintained by and distributed to several collaborators and *jupyter notebooks* for highlevel code, clean representation of the results, and data exploration. 
 
@@ -34,6 +36,22 @@ Before we get going you need to install a few programs and setup you working env
 ### Anaconda
 I recommend to install python via Anaconda, which supports Linux, MacOS and Windows. Go to https://www.anaconda.com/distribution/ and install the latest version (Anaconda 2019.10 | Python 3.7 as of this writing).
 This provides with python 3.7 and all the main python packages ![](./images/distro-01-1.png)
+
+### notebook extensions
+[Jupyter Notebook Extensions](https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/) contain unofficial extensions that add functionality to the Jupyter notebook.
+<!--`pip install jupyter_contrib_nbextensions && jupyter contrib nbextension install `-->
+
+In the anaconda shell or terminal execute
+
+`conda install -c conda-forge jupyter_contrib_nbextensions`
+
+and
+ 
+`jupyter contrib nbextension install --sys-prefix`
+
+to install the extensions.
+
+Now we are ready to get going with Jupyter notebooks. If you also want to get into developing you own python packages follow the steps below to install PyCharm and setup a github account.
 ### PyCharm
 Any text editor can be used to develop your python code. However, I find it more convinient to use an "integrated development environment" (IDE) such as PyCharm, which provided a range of useful tools. Go to https://www.jetbrains.com/pycharm/ and download the latest version of PyCharm.
 ### Github
@@ -87,7 +105,7 @@ That's it!! Now you can check in a browser that your new project  actually appea
 
 
 
-
+<!--
 ## Getting Started
 The software was developed and tested with python 3.6 on 64-bit Ubunutu. Prior to installation, install the latest  Anaconda distribution for python version 3.6, as it contains some extra dependencies this project utilizes.
 You can find the latest Anaconda distribution [here](https://www.continuum.io/downloads). 
@@ -106,10 +124,23 @@ If you are interested in hosting the source code more directly, you can clone fr
 
 ```>>> git clone https://github.com/JanGieseler/edaipynb.git```
 
+!-->
+
+
+### Starting the notebook
+There are two options to start up the notebook server.
+
+Option 1 is to exectute `jupyter notebook` in the terminal or anaconda shell. The current location from which the command is executed will be the root location.
+
+Option 2 is to open anaconda (in Windows) and start jupyter.
+
+
+
 
 ## Funding
-duffingtools has been partially funded by the European Union (H2020-MSCA-IF-2014 under REA grant Agreement No. 655369).
-![](./images/MC.jpg)
+edaipynb has been partially funded by the European Union (H2020-MSCA-IF-2014 under REA grant Agreement No. 655369).
+
+![](./images/MC.png)
 
 # About
 edaipynb is built on python 3.6 and tested on Ubunutu, MacOS and Windows
