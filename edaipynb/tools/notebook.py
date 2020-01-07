@@ -65,6 +65,10 @@ def save_notebook_as_html(target_folder=None):
     save_notebook()
     time.sleep(3)  # wait a little to make sure file is saved
     current_file = get_notebook_name()
+
+    if type(target_folder) is str:
+        target_folder = Path(target_folder)
+
     if target_folder is None:
         output_file = current_file.replace('.ipynb', '.html')
     else:
