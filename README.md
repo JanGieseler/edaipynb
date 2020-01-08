@@ -37,6 +37,7 @@ This provides with python 3.7 and all the main python packages
 
 ![](./images/distro-01-1.png)
 
+
 ### notebook extensions
 [Jupyter Notebook Extensions](https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/) contain unofficial extensions that add functionality to the Jupyter notebook.
 <!--`pip install jupyter_contrib_nbextensions && jupyter contrib nbextension install `-->
@@ -54,10 +55,11 @@ to install the extensions.
 Now we are ready to get going with Jupyter notebooks. If you also want to get into developing you own python packages follow the steps below to install PyCharm and setup a github account.
 ### PyCharm
 Any text editor can be used to develop your python code. However, I find it more convinient to use an "integrated development environment" (IDE) such as PyCharm, which provided a range of useful tools. Go to https://www.jetbrains.com/pycharm/ and download the latest version of PyCharm.
-### Github
+### Git / Github
 [Version Control](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)  is a system that records changes to a file or set of files over time so that you can recall specific versions later. Generally it means that if you screw things up or lose files, you can easily recover. In addition, you get all this for very little overhead.
 As always there are many solutions out there. Here we will work with github. To create an account go to https://github.com/. To use github seamlessly with PyCharm go to `PyCharm->Preferences->Version Control->Github`. Then click on the '+' sign to login with your github credentials: ![](./images/PyCharm-Github.png)
 
+On Windows you might have to install git (https://git-scm.com/download/win). 
 
 
 
@@ -94,6 +96,13 @@ Any other license, as long as it is obtained from the creator of this package.
 ## FAQ
 ### pip install doesn't work
 Make sure you have the latest version of pip and setuptools
+
 ```>>> pip install --upgrade setuptools```
+
 ```>>> pip install --upgrade pip```
+
+### some packages are missing
+You should get most packages when you install `edaipynb`
+
+In addition, you will have to install plotly `conda install -c plotly plotly=4.4.1`
 
