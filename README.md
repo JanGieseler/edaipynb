@@ -11,24 +11,22 @@ In experimental science on of the main challenges is to reconcile code redundanc
 ![](./images/motivation.png)
 
 In the following we will use a combination of *python packages* to maintain low level code that can be maintained by and distributed to several collaborators and *jupyter notebooks* for highlevel code, clean representation of the results, and data exploration. 
-
  
 ## What you will learn
 After reading through this file and going through the notebooks you will know
-- How to setup a working environment (using Anaconda, PyCharm and Github)
-- How to work with python packages, including
+1. How to setup a working environment (using Anaconda, PyCharm and Github)
+1. How to work with jupyter notebooks, including
+    - notebook extensions to extend the capabilities of your notebooks and writing organized and readable notebooks using markdown, html and LaTex (see `1) Notebook_and_Python_1-0-1.ipynb`)
+    - load and save data, using pandas (see `2) Data_in_and_out.ipynb`) 
+    - plotting scientific figures and interactive plotting for data analysis and exploration (see `3) Plotting.ipynb`)
+    - how to fit data and propagate errors (see `4) Fitting and error propagation.ipynb`)
+    - dynamically load your python packages (see `5) Working with custom packages.ipynb`)
+1. How to work with python packages, including
     - some basics of the Python language
     - package structure
     - version control with git (using github)
     - distribution of python packages (using pip)
     - accessing your python packages from jupyter notebooks
-- How to work with jupyter notebooks, including
-    - notebook extensions to extend the capabilities of your notebooks
-    - organized and readable notebooks (using markdown, html and LaTex)
-    - dynamically load your python packages
-    - load and save data (using pandas)
-    - plotting scientific figures 
-    - interactive plotting for data analysis and exploration
 
 
 ## Before you get started - Setting up
@@ -62,30 +60,6 @@ As always there are many solutions out there. Here we will work with github. To 
 
 
 
-
-
-
-
-<!--
-## Getting Started
-The software was developed and tested with python 3.6 on 64-bit Ubunutu. Prior to installation, install the latest  Anaconda distribution for python version 3.6, as it contains some extra dependencies this project utilizes.
-You can find the latest Anaconda distribution [here](https://www.continuum.io/downloads). 
-
-### Installation
-There are two main ways to install edaipynb: via pip, the python package manager, or directly from the source via github. The former is easier, while the latter gives more explicit access to the source code.
-
-#### Via pip (Beginner)
-The simplest way to install edaipynb is with the command-line utility pip. To install simply issue the command
-
-```>>> pip install git+https://github.com/JanGieseler/edaipynb.git```
-
-
-#### Via git (Intermediate/Advanced)
-If you are interested in hosting the source code more directly, you can clone from our git page:
-
-```>>> git clone https://github.com/JanGieseler/edaipynb.git```
-
-!-->
 
 
 ### Starting the notebook
