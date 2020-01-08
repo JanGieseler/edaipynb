@@ -6,7 +6,7 @@ from edaipynb import __version__ as current_version
 # NOTES for updating this file:
 # 1) for version update in the edaipynb.__init__
 # 2) update the following comment_on_changes
-comment_on_changes = 'added notebooks and some helper functions'
+comment_on_changes = 'small update'
 # ========================================================================================================
 # ========================================================================================================
 
